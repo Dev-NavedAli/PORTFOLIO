@@ -68,7 +68,7 @@ switchThemeEl.addEventListener("click", () => {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
     localStorage.setItem("theme", "light");
-    switchThemeEl.checked = false;
+    // switchThemeEl.checked = false;
   } else {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
