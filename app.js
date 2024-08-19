@@ -5,7 +5,6 @@ let port = 8080
 const path = require("path") //for ejs
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const { error, info } = require('console');
 
 
 app.set("view engine","ejs")    //for ejs 
@@ -43,8 +42,6 @@ transporter.sendMail(mailOptions,(error,info)=>{
     }
 })
 });
-
-
 
 app.get("/",(req,res)=>{
     res.render("index.ejs")
