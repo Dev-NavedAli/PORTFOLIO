@@ -926,6 +926,71 @@
     filter: invert(1);
   }
   
+  .theme-switch {
+    /* Track */
+  
+    --track-size: calc(var(--thumb-size) * 2);
+    --track-padding: 0.225rem;
+    --track-inactive: hsl(80 0% 80%);
+    --track-active: #d7aefb;
+  
+    --track-color-inactive: var(--track-inactive);
+    --track-color-active: var(--track-active);
+  
+    /* Thumb */
+  
+    --thumb-position: 0%;
+    --thumb-size: 1.2rem;
+    --thumb: hsl(0 0% 100%);
+    --thumb-highlight: hsla(0, 0%, 0%, 0.056);
+  
+    --thumb-color: var(--thumb);
+    --thumb-color-highlight: var(--thumb-highlight);
+  }
+  
+  .theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 2ch;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* For Safari and older versions of iOS Safari */
+  -webkit-user-select: none;  /* or other values like 'text', 'auto', etc. */
+  }
+  
+  .theme-switch > span,
+  .theme-switch > input {
+    cursor: pointer;
+  }
+  
+  .theme-switch span {
+    font-size: 1rem;
+    color: var(--sub);
+  }
+  
+  .theme-switch > input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: content-box;
+    inline-size: var(--track-size);
+    block-size: var(--thumb-size);
+    padding: var(--track-padding);
+    background-color: var(--track-color-inactive);
+    border-radius: var(--track-size);
+  }
+  
+  .theme-switch > input::after {
+    display: block;
+    content: "";
+    inline-size: var(--thumb-size);
+    block-size: var(--thumb-size);
+    background-color: var(--thumb-color);
+    border-radius: 50%;
+    transform: translateX(var(--thumb-position));
+    transition: 500ms all cubic-bezier(0.45, 0.05, 0.22, 1.3);
+  }
+  
   input:checked {
     --thumb-position: 100%;
     background-color: var(--track-active);
