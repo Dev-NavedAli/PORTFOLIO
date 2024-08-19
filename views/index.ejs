@@ -8,11 +8,7 @@
 
 
 <!-- Update favicon href attribute with image of yourself -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/IMG_20211107_164024_946.jpg"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="assets/images/IMG_20211107_164024_946.jpg" type="image/png" />
 
     <!-- Preloading fonts for better performance -->
 
@@ -261,7 +257,9 @@
                 loading="lazy"
               />
             </div>
-            <form action="#" class="contact-form" netlify>
+
+            <!-- form start  -->
+            <form action="/send-email" class="contact-form" method="POST" >
               <div class="form-field">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required />
@@ -282,6 +280,8 @@
               </div>
               <button type="submit" class="btn btn-cta">Send</button>
             </form>
+
+            <!-- form end -->
           </div>
         </div>
       </section>
