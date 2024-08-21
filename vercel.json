@@ -4,8 +4,7 @@
       { "src": "app.js", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "app.js" ,
-      "timeout":30
+      { "src": "/(.*)", "dest": "app.js"
   }
     ]
   }
