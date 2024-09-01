@@ -6,7 +6,6 @@ const path = require("path") //for ejs
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-
 app.set("view engine","ejs")    //for ejs 
 app.set("views",path.join(__dirname,"/views")) //for ejs
 
@@ -38,10 +37,11 @@ transporter.sendMail(mailOptions,(error,info)=>{
     }
     else{
         console.log(`Mail sent succesfully`+ info.response)
-        res.send("Mail sent succesfully")
+        res.redirect("/")
     }
 })
 });
+  
 
 app.get("/",(req,res)=>{
     res.render("index.ejs")
