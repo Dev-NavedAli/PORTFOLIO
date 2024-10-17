@@ -1,335 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
 
-<!-- Update favicon href attribute with image of yourself -->
-    <link rel="shortcut icon" href="assets/images/IMG_20211107_164024_946.jpg" type="image/png" />
+  <!-- Update favicon href attribute with image of yourself -->
+  <link rel="shortcut icon" href="assets/images/IMG_20211107_164024_946.jpg" type="image/png" />
 
-    <!-- Preloading fonts for better performance -->
+  <!-- Preloading fonts for better performance -->
 
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet" href="/style.css"  />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="script.js" defer></script>
 
-    <!-- Your name here -->
-    <title>Naved khan Portfolio</title>
-  </head>
+  <!-- Your name here -->
+  <title>Naved khan Portfolio</title>
+</head>
 
-  <body>
+<body>
 
-    <script>
-      const theme = localStorage.getItem("theme") || "dark";
-      document.body.classList.add(theme);
-    </script>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
 
-    <header class="header">
+  <header class="header">
 
-      <div class="menu-btn-container">
-        <div class="container">
-          <button type="button"  class="menu-btn">menu</button>
-        </div>
-      </div>
-
-      <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#work">Projects</a></li>
-          <li class="nav-item"><a href="#skills">My Skills</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contact</a>
-          </li>
-        </ol>
-      </nav>
-
+    <div class="menu-btn-container">
       <div class="container">
-        <div class="header-textbox">
-          <!-- Replace with your name and job title -->
-          <h1 class="h1">
-            <span>Hi, I'm Naved Ali Khan</span>
-            <span>Full Stack  Web Developer</span>
-          </h1>
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
 
-          <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text">
-            A full-stack developer who specializes in designing and building scalable, secure, and efficient web applications, handling both frontend interfaces and robust backend systems.
-          </p>
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#work">Projects</a></li>
+        <li class="nav-item"><a href="#skills">My Skills</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
 
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Hire me</a>
-            <a href="#work" class="btn btn-secondary">See my work</a>
-          </div>
+    <div class="container">
+      <div class="header-textbox">
+        <!-- Replace with your name and job title -->
+        <h1 class="h1">
+          <span>Hi, I'm Naved Ali Khan</span>
+          <span>Full Stack Web Developer</span>
+        </h1>
+
+        <!-- Add a small introductory paragraph about yourself -->
+        <p class="header-text">
+          A full-stack developer who specializes in designing and building scalable, secure, and efficient web
+          applications, handling both frontend interfaces and robust backend systems.
+        </p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">Hire me</a>
+          <a href="#work" class="btn btn-secondary">See my work</a>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="work">
-        <div class="container">
-          <h2 class="h2" id="work">Projects</h2>
-          <div class="work-boxes">
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">WanderLust</h3>
-                <p class="work-text">
-                  Developed a web-based platform like Airbnb that connecting travelers.
-                </p>
-                <ol class="work-technologies">
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDb</li>
-                  <li>Cloudinary</li>
-                </ol>
-
-                <div class="work-links">
-                  <a href="https://major-project-45rq.onrender.com/listings" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/Dev-NavedAli/Wanderlust"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-
-         <!-- Update img src and alt attribute  -->
-
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/Wanderlust.jpeg"
-                  alt="agency elevation"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">ToDo</h3>
-                <p class="work-text">Website for Adding Remainder</p>
-                <ol class="work-technologies">
-                  <li>React</li>
-                  <li>Vite</li>
-                  <li>Material UI</li>
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://todo-app-react-six-beta.vercel.app/" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/Dev-NavedAli/Todo-app-react"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/TODO.jpeg"
-                  alt="portfolio template"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Spotify Clone</h3>
-                <p class="work-text">
-                  Website for listening the Music
-                </p>
-                <ol class="work-technologies">
-                  <li>Html</li>
-                  <li>Css</li>
-                  <li>JavaScript</li>
-                </ol>
-                <div class="work-links">
-                  <a href="#" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img loading="lazy"
-                  src="https://images.unsplash.com/photo-1514471157964-06459a4b9241?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="contribute dev"/>
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
-
-      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
-
-      <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">My Toolkit</h2>
-          <div class="skills-imgs">
-                <img src="assets/images/skills/html.png" alt="Html" class="skills-img" loading="lazy" title="Html">
-                <img src="assets/images/skills/css-3.png" alt="Css" class="skills-img" loading="lazy" title="Css">
-                 <img src="assets/images/skills/js.png" alt="Typescript" class="skills-img" loading="lazy" title="JavaScript">
-                 <img src="assets/images/skills/bootstrap.png" alt="bootstrap" class="skills-img" loading="lazy" title="Web bootstrap">
-                 <img src="assets/images/skills/tailwind.svg" alt="Tailwind" class="skills-img" loading="lazy" title="Tailwind">
-                 <img src="assets/images/skills/materialui.png" alt="Material UI" class="skills-img" loading="lazy" title="Material UI">
-                 <img src="assets/images/skills/react.webp" alt=" React" class="skills-img" loading="lazy" title=" React">
-                 <img src="assets/images/skills/redux.png" alt="Redux" class="skills-img" loading="lazy" title="Redux">
-                 <img src="assets/images/skills/Git_icon.svg" alt="Git" class="skills-img" loading="lazy" title="Git">
-                 <img src="assets/images/skills/github-sign.png" alt="Github" class="skills-img" loading="lazy" title="Github">
-                 <img src="assets/images/skills/sql.png" alt="Sql" class="skills-img" loading="lazy" title="Sql">
-                 <img src="assets/images/skills/mongodb.svg" alt="MongoDb" class="skills-img" loading="lazy" title="MongoDb">
-                 <img src="assets/images/skills/node-js.svg" alt="Node" class="skills-img" loading="lazy" title="Node">
-                 <img src="assets/images/skills/express.svg" alt="Express" class="skills-img" loading="lazy" title="Express">
-                 <img src="assets/images/skills/python.svg" alt="Python" class="skills-img" loading="lazy" title="Python">
-                 <img src="assets/images/skills/django.svg" alt="Djnago" class="skills-img" loading="lazy" title="Djnago">
-                 <img src="assets/images/skills/saas.png" alt="Saas" class="skills-img" loading="lazy" title="Saas">
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- contact -->
-      <section class="contact">
-        <div class="container">
-          <h2 class="h2" id="contact">Send Message</h2>
-          <div class="contact-content">
-            <div class="contact-textbox">
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                <a href="https://www.linkedin.com/in/naved-khan-294519252/" class="hirea">Available for hire</a> 
-              </strong>
-              <p class="contact-text">
-                As a full-stack developer, I build both front-end and back-end systems with a strong emphasis on accessibility and performance. I enjoy coding from scratch and take pleasure in transforming ideas into fully functional applications.
-              </p>
-              <p class="contact-text">
-                I'm also a freelancer
-              </p>
-              <!-- Replace src with your signatures and name -->
-              <img
-                src="assets/images/signature.png"
-                alt="Syed Mohsin"
-                class="signatures"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- form start  -->
-            <form action="/send-email" class="contact-form" method="POST" >
-              <div class="form-field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  inputmode="email"
-                />
-              </div>
-              <div class="form-field">
-                <label for="message">How can I help you?</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-cta" onclick="toast">Send</button>
-            </form>
-
-            <!-- form end -->
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+  <main>
+    <section class="work">
       <div class="container">
-        <div class="footer-content">
-          <!-- Update href and src attributes -->
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="GitHub" href="https://github.com/Dev-NavedAli" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/github.svg"
-                    alt="GitHub"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/devnaved/" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/linkedin.svg"
-                    alt="Linkedin"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/twitter.svg"
-                    alt="Twitter"
-                /></a>
-              </li>
-            </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2024</span> - Template designed & developed by &nbsp; <a target="_blank" rel="noopener" href="https://github.com/Dev-NavedAli">Naved Ali Khan</a>
-          </p>
-          <label class="theme-switch" for="theme-switch">
-            <span>Dark Theme</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
+        <h2 class="h2" id="work">Projects</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">WanderLust</h3>
+              <p class="work-text">
+                Developed a web-based platform like Airbnb that connecting travelers.
+              </p>
+              <ol class="work-technologies">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDb</li>
+                <li>Cloudinary</li>
+              </ol>
+
+              <div class="work-links">
+                <a href="https://major-project-45rq.onrender.com/listings" target="_blank" rel="noopener"
+                  class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/Dev-NavedAli/Wanderlust" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/Wanderlust.jpeg" alt="agency elevation" />
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">ToDo</h3>
+              <p class="work-text">Website for Adding Remainder</p>
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Material UI</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://todo-app-react-six-beta.vercel.app/" target="_blank" rel="noopener"
+                  class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/Dev-NavedAli/Todo-app-react" target="_blank" rel="noopener"
+                  title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/TODO.jpeg" alt="portfolio template" />
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Spotify Clone</h3>
+              <p class="work-text">
+                Website for listening the Music
+              </p>
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>TailWind</li>
+                <li>MongoDb</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://spotify-frontend-pi.vercel.app" target="_blank" rel="noopener" class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="#" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1514471157964-06459a4b9241?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="contribute dev" />
+            </picture>
+          </div>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  </body>
+    </section>
+
+    <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+    <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">My Toolkit</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/html.png" alt="Html" class="skills-img" loading="lazy" title="Html">
+          <img src="assets/images/skills/css-3.png" alt="Css" class="skills-img" loading="lazy" title="Css">
+          <img src="assets/images/skills/js.png" alt="Typescript" class="skills-img" loading="lazy" title="JavaScript">
+          <img src="assets/images/skills/bootstrap.png" alt="bootstrap" class="skills-img" loading="lazy"
+            title="Web bootstrap">
+          <img src="assets/images/skills/tailwind.svg" alt="Tailwind" class="skills-img" loading="lazy"
+            title="Tailwind">
+          <img src="assets/images/skills/materialui.png" alt="Material UI" class="skills-img" loading="lazy"
+            title="Material UI">
+          <img src="assets/images/skills/react.webp" alt=" React" class="skills-img" loading="lazy" title=" React">
+          <img src="assets/images/skills/redux.png" alt="Redux" class="skills-img" loading="lazy" title="Redux">
+          <img src="assets/images/skills/Git_icon.svg" alt="Git" class="skills-img" loading="lazy" title="Git">
+              <img src="assets/images/skills/github-sign.png" alt="Github" class="skills-img" loading="lazy"
+                title="Github" style="background-color: white;">
+                <img src="assets/images/skills/sql.png" alt="Sql" class="skills-img" loading="lazy" title="Sql">
+                <img src="assets/images/skills/mongodb.svg" alt="MongoDb" class="skills-img" loading="lazy"
+                  title="MongoDb">
+                <img src="assets/images/skills/node-js.svg" alt="Node" class="skills-img" loading="lazy" title="Node">
+                <img src="assets/images/skills/express.svg" alt="Express" class="skills-img" loading="lazy"
+                  title="Express" style="background-color: white;">
+                <img src="assets/images/skills/python.svg" alt="Python" class="skills-img" loading="lazy"
+                  title="Python">
+                <img src="assets/images/skills/django.svg" alt="Djnago" class="skills-img" loading="lazy"
+                  title="Djnago">
+                <img src="assets/images/skills/saas.png" alt="Saas" class="skills-img" loading="lazy" title="Saas">
+                </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">Send Message</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              <a href="https://www.linkedin.com/in/naved-khan-294519252/" class="hirea">Available for hire</a>
+            </strong>
+            <p class="contact-text">
+              As a full-stack developer, I build both front-end and back-end systems with a strong emphasis on
+              accessibility and performance. I enjoy coding from scratch and take pleasure in transforming ideas into
+              fully functional applications.
+            </p>
+            <p class="contact-text">
+              I'm also a freelancer
+            </p>
+            <!-- Replace src with your signatures and name -->
+            <img src="assets/images/signature.png" alt="Syed Mohsin" class="signatures" loading="lazy" />
+          </div>
+
+          <!-- form start  -->
+          <form action="/send-email" class="contact-form" method="POST">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email" />
+            </div>
+            <div class="form-field">
+              <label for="message">How can I help you?</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta" onclick="toast">Send</button>
+          </form>
+
+          <!-- form end -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Update href and src attributes -->
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/Dev-NavedAli" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/devnaved/" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/twitter.svg" alt="Twitter" /></a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; <span>2024</span> - Template designed & developed by &nbsp; <a target="_blank" rel="noopener"
+            href="https://github.com/Dev-NavedAli">Naved Ali Khan</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Dark Theme</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
 </html>
