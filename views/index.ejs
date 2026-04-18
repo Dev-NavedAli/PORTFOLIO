@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-
-
-  <!-- Update favicon href attribute with image of yourself -->
   <link rel="shortcut icon" href="assets/images/IMG_20211107_164024_946.jpg" type="image/png" />
-
-  <!-- Preloading fonts for better performance -->
-
   <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
-
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <script src="script.js" defer></script>
-
-  <!-- Your name here -->
   <title>Naved khan Portfolio</title>
 </head>
-
 <body>
-
   <script>
-    const theme = localStorage.getItem("theme") || "dark";
+    const theme = localStorage.getItem("theme") || "light";
     document.body.classList.add(theme);
   </script>
-
   <header class="header">
-
     <div class="menu-btn-container">
       <div class="container">
         <button type="button" class="menu-btn">menu</button>
       </div>
     </div>
-
     <nav class="nav hidden">
       <ol class="nav-items">
         <li class="nav-item"><a href="#">Home</a></li>
@@ -48,21 +33,19 @@
         </li>
       </ol>
     </nav>
-
     <div class="container">
       <div class="header-textbox">
-        <!-- Replace with your name and job title -->
         <h1 class="h1">
           <span>Hi, I'm Naved Ali Khan</span>
           <span>Full Stack Web Developer</span>
         </h1>
-
-        <!-- Add a small introductory paragraph about yourself -->
         <p class="header-text">
-          A full-stack developer who specializes in designing and building scalable, secure, and efficient web
-          applications, handling both frontend interfaces and robust backend systems.
+          Software developer with 1 year of experience in Angular, Node.js, and SQL. Strong MERN background with
+          expertise in
+          building scalable web applications, RESTful APIs, and responsive UIs using modern frontend frameworks,
+          databases,
+          and third-party integrations.
         </p>
-
         <div class="header-btns">
           <a href="#contact" class="btn btn-cta">Hire me</a>
           <a href="#work" class="btn btn-secondary">See my work</a>
@@ -70,7 +53,6 @@
       </div>
     </div>
   </header>
-
   <main>
     <section class="work">
       <div class="container">
@@ -78,61 +60,46 @@
         <div class="work-boxes">
           <div class="work-box">
             <div class="work-textbox">
-              <h3 class="h3">WanderLust</h3>
+              <h3 class="h3">I Heal</h3>
               <p class="work-text">
-                Developed a web-based platform like Airbnb that connecting travelers.
+                I Heal is a Hospital Management System that manages patient records and offers services like ambulance
+                booking,
+                doctor consultations, and medicine discussions
               </p>
               <ol class="work-technologies">
+                <li>Angular</li>
                 <li>Node.js</li>
                 <li>Express</li>
-                <li>MongoDb</li>
-                <li>Cloudinary</li>
+                <li>MySql</li>
+                <li>Bootstrap</li>
               </ol>
-
               <div class="work-links">
-                <a href="https://major-project-45rq.onrender.com/listings" target="_blank" rel="noopener"
-                  class="link">Explore this project</a>
-
-                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                <a href="https://github.com/Dev-NavedAli/Wanderlust" target="_blank" rel="noopener" title="Source code">
-                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
-                </a>
+                <a href="https://maishahealthai.co.zw/home" target="_blank" rel="noopener" class="link">Explore this
+                  project</a>
               </div>
             </div>
-
-            <!-- Update img src and alt attribute  -->
-
             <picture class="work-img">
-              <img loading="lazy" src="assets/images/work/Wanderlust.jpeg" alt="agency elevation" />
+              <img loading="lazy" src="assets/images/work/iHeal.png" alt="agency elevation" />
             </picture>
           </div>
           <div class="work-box">
             <div class="work-textbox">
-              <h3 class="h3">Ecommerce</h3>
-              <p class="work-text"> Website for Shopping </p>
+              <h3 class="h3">Game Box</h3>
+              <p class="work-text">Game Box is a gaming platform that hosts tournaments, tracks player scores, and
+                distributes rewards based on rankings</p>
               <ol class="work-technologies">
-                <li>React</li>
-                <li>Vite</li>
+                <li>Angular</li>
+                <li>MySql</li>
                 <li>Node</li>
                 <li>Tailwind</li>
                 <li>Express</li>
-                <li>MongoDb</li>
               </ol>
               <div class="work-links">
-                <!-- Add url of project in href attribute -->
-                <a href="https://todo-app-react-six-beta.vercel.app/" target="_blank" rel="noopener"
-                  class="link">Explore this project</a>
-
-                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                <a href="https://github.com/Dev-NavedAli/Todo-app-react" target="_blank" rel="noopener"
-                  title="Source code">
-                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
-                </a>
+                <a href="https://yogamez.co.zw/" target="_blank" rel="noopener" class="link">Explore this project</a>
               </div>
             </div>
-            <!-- Update img src and alt attribute  -->
             <picture class="work-img">
-              <img loading="lazy" src="assets/images/indexPage.png" alt="portfolio template" />
+              <img loading="lazy" src="assets/images/work/gamebox.png" alt="portfolio template" />
             </picture>
           </div>
           <div class="work-box">
@@ -149,9 +116,8 @@
                 <li>MongoDb</li>
               </ol>
               <div class="work-links">
-                <a href="https://ecommerce-frontend-eight-xi.vercel.app" target="_blank" rel="noopener" class="link">Explore this project</a>
-
-                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://ecommerce-frontend-eight-xi.vercel.app" target="_blank" rel="noopener"
+                  class="link">Explore this project</a>
                 <a href="#" target="_blank" rel="noopener" title="Source code">
                   <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
                 </a>
@@ -166,15 +132,12 @@
         </div>
       </div>
     </section>
-
-    <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
-
-    <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
-
     <section class="skills">
       <div class="container">
         <h2 class="h2" id="skills">My Toolkit</h2>
         <div class="skills-imgs">
+          <img src="assets/images/skills/angular.jfif" alt="Saas" class="skills-img" loading="lazy" title="Saas">
+          <img src="assets/images/skills/jira.jfif" alt="Saas" class="skills-img" loading="lazy" title="Saas">
           <img src="assets/images/skills/html.png" alt="Html" class="skills-img" loading="lazy" title="Html">
           <img src="assets/images/skills/css-3.png" alt="Css" class="skills-img" loading="lazy" title="Css">
           <img src="assets/images/skills/js.png" alt="Typescript" class="skills-img" loading="lazy" title="JavaScript">
@@ -187,25 +150,20 @@
           <img src="assets/images/skills/react.webp" alt=" React" class="skills-img" loading="lazy" title=" React">
           <img src="assets/images/skills/redux.png" alt="Redux" class="skills-img" loading="lazy" title="Redux">
           <img src="assets/images/skills/Git_icon.svg" alt="Git" class="skills-img" loading="lazy" title="Git">
-              <img src="assets/images/skills/github-sign.png" alt="Github" class="skills-img" loading="lazy"
-                title="Github" style="background-color: white;">
-                <img src="assets/images/skills/sql.png" alt="Sql" class="skills-img" loading="lazy" title="Sql">
-                <img src="assets/images/skills/mongodb.svg" alt="MongoDb" class="skills-img" loading="lazy"
-                  title="MongoDb">
-                <img src="assets/images/skills/node-js.svg" alt="Node" class="skills-img" loading="lazy" title="Node">
-                <img src="assets/images/skills/express.svg" alt="Express" class="skills-img" loading="lazy"
-                  title="Express" style="background-color: white;">
-                <img src="assets/images/skills/python.svg" alt="Python" class="skills-img" loading="lazy"
-                  title="Python">
-                <img src="assets/images/skills/django.svg" alt="Djnago" class="skills-img" loading="lazy"
-                  title="Djnago">
-                <img src="assets/images/skills/saas.png" alt="Saas" class="skills-img" loading="lazy" title="Saas">
-                </figure>
+          <img src="assets/images/skills/github-sign.png" alt="Github" class="skills-img" loading="lazy" title="Github"
+            style="background-color: white;">
+          <img src="assets/images/skills/sql.png" alt="Sql" class="skills-img" loading="lazy" title="Sql">
+          <img src="assets/images/skills/mongodb.svg" alt="MongoDb" class="skills-img" loading="lazy" title="MongoDb">
+          <img src="assets/images/skills/node-js.svg" alt="Node" class="skills-img" loading="lazy" title="Node">
+          <img src="assets/images/skills/express.svg" alt="Express" class="skills-img" loading="lazy" title="Express"
+            style="background-color: white;">
+          <img src="assets/images/skills/python.svg" alt="Python" class="skills-img" loading="lazy" title="Python">
+          <img src="assets/images/skills/django.svg" alt="Djnago" class="skills-img" loading="lazy" title="Djnago">
+          <img src="assets/images/skills/bitbucket.jfif" alt="Saas" class="skills-img" loading="lazy" title="Saas">
+          </figure>
         </div>
       </div>
     </section>
-
-    <!-- contact -->
     <section class="contact">
       <div class="container">
         <h2 class="h2" id="contact">Send Message</h2>
@@ -216,18 +174,17 @@
               <a href="https://www.linkedin.com/in/naved-khan-294519252/" class="hirea">Available for hire</a>
             </strong>
             <p class="contact-text">
-              As a full-stack developer, I build both front-end and back-end systems with a strong emphasis on
-              accessibility and performance. I enjoy coding from scratch and take pleasure in transforming ideas into
-              fully functional applications.
+              Software developer with 1 year of experience in Angular, Node.js, and SQL. Strong MERN background with
+              expertise in
+              building scalable web applications, RESTful APIs, and responsive UIs using modern frontend frameworks,
+              databases,
+              and third-party integrations
             </p>
             <p class="contact-text">
               I'm also a freelancer
             </p>
-            <!-- Replace src with your signatures and name -->
             <img src="assets/images/signature.png" alt="Syed Mohsin" class="signatures" loading="lazy" />
           </div>
-
-          <!-- form start  -->
           <form action="/send-email" class="contact-form" method="POST">
             <div class="form-field">
               <label for="name">Name</label>
@@ -243,17 +200,13 @@
             </div>
             <button type="submit" class="btn btn-cta" onclick="toast">Send</button>
           </form>
-
-          <!-- form end -->
         </div>
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <!-- Update href and src attributes -->
         <nav>
           <ol class="footer-links">
             <li class="footer-link">
@@ -274,14 +227,9 @@
           &copy; <span>2024</span> - Template designed & developed by &nbsp; <a target="_blank" rel="noopener"
             href="https://github.com/Dev-NavedAli">Naved Ali Khan</a>
         </p>
-        <label class="theme-switch" for="theme-switch">
-          <span>Dark Theme</span>
-          <input type="checkbox" id="theme-switch" role="switch" />
-        </label>
       </div>
     </div>
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
-
 </html>
